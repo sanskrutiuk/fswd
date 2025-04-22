@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hideandseek</title>
+    <style>
+        .para{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:larger;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(193, 218, 105);">
+    <div class="para">
+        <p id="content">This is a paragraph and it plays hide and seek</p>
+        <button id="hide" onclick="hide()">HIDE</button>
+        <button id="show" onclick="show()">SHOW</button>
+    </div>
+    <script>
+        function hide(){
+            const content = document.getElementById("content");
+            const show = document.getElementById("show");
+            const hide = document.getElementById("hide");
+            content.style.display = 'none' ;
+            show.style.display = 'block' ;
+            hide.style.display = 'none' ;
+
+        }
+        function show(){
+            const content = document.getElementById("content");
+            const show = document.getElementById("show");
+            const hide = document.getElementById("hide");
+            content.style.display = 'block' ;
+            show.style.display = 'none' ;
+            hide.style.display = 'block' ;
+        }
+    </script>
+</body>
+</html>

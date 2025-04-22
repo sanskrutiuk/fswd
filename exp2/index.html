@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Heist Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 10px;
+            padding: 20px;
+            
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            width: 80%;
+            height: 80%;
+        }
+
+        .characters {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .character-card {
+            border: 2px solid red;
+            transition: 0.3s;
+            height: 40%;
+            width: 40%;
+        }
+
+        .character-card:hover {
+            transform: scale(1.4);
+        }
+
+        .tribute {
+            background-color: white;
+            font-size: small;
+            color: red;
+            text-align: center;
+            padding: 1px 2px;
+            margin: 20px auto;
+            border: 2px solid red;
+            border-radius: 20px ;
+            width: 40%;
+        }
+
+        .img1 {
+            height: 90%;
+            width: 87%;
+            padding-top:4px;
+        }
+
+        .img2 {
+            height: 90%;
+            width: 95%;
+            padding-top: 3px;
+        }  
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <p style="text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">The ultimate tribute
+            to the legendary heist series!</p>
+        <h1 style="color: red;font-size:xx-large;">Money Heist</h1>
+        <div class="characters">
+            <div class="character-card">
+                <img src="https://www.denofgeek.com/wp-content/uploads/2021/09/money-heist-season-5-tokyo-death-cliffhanger.jpeg?resize=768%2C432"
+                    alt="money heist" class="img1">
+            </div>
+            <div class="character-card">
+                <img src="https://miro.medium.com/v2/resize:fit:1000/1*akOC_NgiUvUAfXb5hHnMXQ.jpeg" alt="money heist"
+                    class="img2">
+            </div>
+        </div>
+        <div class="tribute">
+            <h2>"Bella Ciao, Bella Ciao"</h2>
+            <p>A tribute to the greatest heist ever!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

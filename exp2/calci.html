@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic calculator</title>
+    <style>
+        .cal {
+            width: 180px;
+            height: 150px;
+            padding: 20px;
+            font-size: 10px;
+            border-style: ridge;
+            border-color: black;
+        }
+    </style>
+</head>
+<body >
+    <div class="cal">
+        <h2 style="text-align: center;">My Calculator</h2>
+        <input type="text" id="num1" name="num1" placeholder="Enter no. 1">
+        <br/>
+        <input type="text" id="num2" name="num2" placeholder="Enter no. 2">
+        <br/>
+        <br/>
+        <button id="btn1" onclick="calculate('+')" >+</button>
+        <button id="btn2" onclick="calculate('-')" >-</button>
+        <button id="btn3" onclick="calculate('*')" >*</button>
+        <button id="btn4" onclick="calculate('/')" >/</button>
+        <br/>
+        <br/>
+        <input type="text" id="result" name="result">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

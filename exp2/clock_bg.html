@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bgcolor changer and digital clock</title>
+    <style>
+        #clock{
+            font-size: 50px;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock">00:00:00</div>
+    <script>
+        function digitalclock(){
+            let a = new Date();
+            let h = a.getHours();
+            let m = a.getMinutes();
+            let s = a.getSeconds();
+            document.getElementById("clock").innerText=`${h}:${m}:${s}`;
+        }
+        setInterval(digitalclock,1000);
+        digitalclock();
+        const colors = ["#FF5733", "#33FF57", "#3357FF", "#F333FF", "#FF33A1"];
+        let index=0;
+        function bgcolorchanger(){
+
+            document.body.style.backgroundColor= colors[index];
+            index = (index+1)%colors.length;
+        }
+        setInterval(bgcolorchanger,5000);
+    </script>
+</body>
+</html>
