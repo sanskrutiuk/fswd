@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb</title>
+    <style>
+        img {
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <img id="bulb" src="https://png.pngtree.com/png-clipart/20240321/original/pngtree-3d-light-bulb-symbol-png-image_14647170.png" alt="bulb">
+    <button id="toggle" onclick="toggle()">Turn On</button>
+    <script>
+        let isbulbon=false;
+        function toggle(){
+        const bulb = document.getElementById("bulb");
+        const toggle = document.getElementById("toggle");
+            if(isbulbon){
+                bulb.src="https://png.pngtree.com/png-clipart/20240321/original/pngtree-3d-light-bulb-symbol-png-image_14647170.png";
+                toggle.textContent="Turn On";
+            }
+            else{
+                bulb.src="https://st.depositphotos.com/37378518/60435/v/450/depositphotos_604351950-stock-illustration-light-bulb-icon-isolated-white.jpg";
+                toggle.textContent="Turn Off";
+            }
+            isbulbon=!isbulbon;
+        }
+    </script>
+</body>
+</html>
